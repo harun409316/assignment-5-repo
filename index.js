@@ -4,7 +4,6 @@ let counter = 0;
 const counterElement = document.getElementById('counter');
 const heartElement = document.querySelectorAll('.heart');
 
-
     for(const heart of heartElement){
         heart.addEventListener("click", function() {
             counter++;
@@ -12,10 +11,10 @@ const heartElement = document.querySelectorAll('.heart');
         })
     }
 //  heart icon end 
+// coin icon count 
 let counters = 100;
 const counterElementValue = document.getElementById('counters');
 const callBtn = document.querySelectorAll('.call-btn');
-
 
     for(let calls of callBtn ){
         calls.addEventListener('click', function(){
@@ -33,13 +32,11 @@ const callBtn = document.querySelectorAll('.call-btn');
 
         })
     }
-
-    // প্রতিটি বাটনের জন্য ইভেন্ট যোগ
+// history icon 
+  
     const callButtons = document.querySelectorAll(".call");
    
     const historyList = document.getElementById("historyList");
-
-    // Call বাটন ক্লিক করলে হিস্ট্রিতে যোগ হবে
     callButtons.forEach(btn => {
       btn.addEventListener("click", () => {
         const cardTitle = btn.closest(".card").querySelector("h3").textContent;
@@ -50,7 +47,6 @@ const callBtn = document.querySelectorAll('.call-btn');
         entry.className = "entry";
         
         entry.textContent = `${cardTitle} - ${cardTitle2} - ${time}`;
-       
         
         historyList.prepend(entry);
       });
