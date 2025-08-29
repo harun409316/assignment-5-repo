@@ -1,4 +1,4 @@
-// heart icon 
+// heart counter icon start
 
 let counter = 0;
 const counterElement = document.getElementById('counter');
@@ -32,8 +32,6 @@ const callBtn = document.querySelectorAll('.call-btn');
         })
     }
 
-
-
     let counterCopy = 0;
     const copyElement = document.getElementById('counter-copy');
     const copyBtn = document.querySelectorAll('.copy-btn');
@@ -47,7 +45,7 @@ const callBtn = document.querySelectorAll('.call-btn');
                 copyElement.textContent = counterCopy;
 
                 navigator.clipboard.writeText(numbers).then(() => {
-                    alert(`number copy: ${numbers}`)
+                    alert(`number copy: ${numbers}`);
                 })
             })
         }
@@ -67,7 +65,7 @@ const callBtn = document.querySelectorAll('.call-btn');
 
         const title = document.createElement("span");
         title.className = "entry-title";
-        title.textContent = `${cardTitle}  `;
+        title.textContent = `${cardTitle}`;
 
         const title2 = document.createElement("span");
         title2.className = "entry-title2";
@@ -79,8 +77,8 @@ const callBtn = document.querySelectorAll('.call-btn');
         
 
            entry.style.backgroundColor = '#fafafa';
-           entry.style.padding = '10px'
-           entry.style.borderRadius = '10px'
+           entry.style.padding = '10px';
+           entry.style.borderRadius = '10px';
            entry.style.marginTop = '10px';
             
 
